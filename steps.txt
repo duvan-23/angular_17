@@ -1,0 +1,47 @@
+ng new nameapp --skip-tests
+ng serve
+	component
+ng g component pages/home
+
+ng build
+firebase init
+-directory: dist/todoapp
+-as single aplication: yes
+-github: not (depend)
+-rewrite index: no
+firebase deploy
+firebase serve 
+-http://localhost:5000
+
+
+-migrate angular new version
+ng g @angular/core:control-flow
+
+ng new store --standalone --skip-tests 
+
+npm install -D prettier prettier-plugin-tailwindcss
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+
+-- flowbite maquetacion tailwind
+	service
+ng g s domains/shared/services/cart
+
+provideHttpClient-> app.config.ts inside providers
+
+fake rest api -> https://fakeapi.platzi.com/en/rest/products/
+
+tsconfig.json ->"compilerOptions" -> "paths": {
+      "@shared/*": ["./src/app/domains/shared/*"]
+    }
+	pipe
+ng g p domains/shared/pipes/reverse
+	directives
+ng g d domains/shared/directives/highlight
+
+
+
+https://todoapp-f89df.web.app/
+
+npm i --g vercel
+vercel
